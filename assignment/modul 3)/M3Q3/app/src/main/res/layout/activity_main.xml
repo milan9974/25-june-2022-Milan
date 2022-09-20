@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8A7A7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME!"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next screen"
+        android:textSize="25dp"
+        android:backgroundTint="#DC4646"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:textStyle="italic"
+        android:id="@+id/btn"
+        />
+
+</LinearLayout>

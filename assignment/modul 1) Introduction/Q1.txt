@@ -1,0 +1,3 @@
+Q1. what is softwere?
+
+Ans.  Softwere is a set of instructions,data or programs used to operate computer and execute specific tasks.

@@ -1,0 +1,30 @@
+MODULE 3 
+
+Q-7 	What is R.java file?
+
+Ans. 	Android R.java file is an auto generated fule by Android asset packaging tool
+	that contains resourec IDs for all resourecs of res/ directory. If you create
+	any component in the activity_main.xml file,id for the corresponding component
+	is automatically created in this file.
+
+
+Q-8	What is activity and activity lifcycle?
+
+Ans.	An activity is the single screen in android. It is like window or frame of Java.
+	By the help of activity, you can place all your UI components or widgets in a 
+	single screen.
+	Any activity has its distinct activity lifecycle. We have an activity stack that 
+	maintains all the activities in it. The most recent activity is at the top of the 
+	stack.
+
+
+Q-9	What is fragment and fragment activity?
+
+Ans.	Android Fragment is the part of activity, it is also known as sub-activity. 
+	There can be more than one fragment in an activity. Fragments represent multiple 
+	screen inside one activity.
+	Each Fragment instance has its own lifecycle. When a user navigates and interacts 
+	with your app, your fragments transition through various states in their lifecycle 
+	as they are added, removed, and enter or exit the screen.
+
+

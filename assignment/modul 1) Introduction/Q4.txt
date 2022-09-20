@@ -1,0 +1,4 @@
+Q4. Difference between mobile application and web application.
+
+Ans.	Mobile apps are desinged for use on smartphones, tablets and other smaller devices.
+	Web application run in a web browser and can be made mobile friendly to shrink down to the size of the screen you're viewing.

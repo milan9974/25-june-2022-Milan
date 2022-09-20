@@ -1,0 +1,6 @@
+Q2. Tyeps of application?
+
+Ans. 	1.web application
+	2.mobile application(android and IOS)
+	
+	
