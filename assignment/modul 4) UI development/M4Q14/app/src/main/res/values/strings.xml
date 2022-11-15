@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">M4Q14</string>
+    <array name="course">
+        <item>C</item>
+        <item>C++</item>
+        <item>JAVA</item>
+        <item>PYTHON</item>
+        <item>KOTLIN</item>
+        <item>ANDROID</item>
+    </array>
+</resources>

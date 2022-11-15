@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#D4FFB9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an application to input 2 numbers from user and all numbers
+between those 2 numbers in next activity"
+        android:layout_margin="10dp"
+        android:background="#FFE870"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter 1st Number"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:inputType="phone" />
+
+    <EditText
+    android:id="@+id/ed2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter 2nd Number"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    android:textSize="25sp"
+    android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        />
+</LinearLayout>

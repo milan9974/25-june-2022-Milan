@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#83A4FBFB"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="151dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/arithmetic" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+        android:id="@+id/rbadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Addition"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <RadioButton
+        android:id="@+id/rbsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Subtraction"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rbmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Multiply"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rerset"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANSWER"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/tvans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

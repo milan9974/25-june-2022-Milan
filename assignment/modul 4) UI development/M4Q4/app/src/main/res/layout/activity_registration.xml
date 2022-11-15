@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCCAFFF7"
+    android:padding="15dp"
+    >
+    <!--  Email Label -->
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Email"/>
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"/>
+    <!--  Password Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Password"/>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:layout_marginBottom="20dp"
+        android:inputType="textWebPassword"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Re-Password"/>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:inputType="textWebPassword"/>
+    <!-- Login button -->
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Register"
+        android:textSize="17dp"
+        android:padding="8dp"
+        />
+    <!-- Link to Registration Screen -->
+
+
+</LinearLayout>
