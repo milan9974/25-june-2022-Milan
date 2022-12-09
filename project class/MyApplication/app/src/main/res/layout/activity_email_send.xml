@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Email_Send_Activity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter subject..."
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/ed_subjectfor_email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email..."
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/ed_email_for_send"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content..."
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/ed_contentfor_email"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send email"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_send_email"
+        />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Phone_Calling_Activity">
+
+<!-- phone call karva mate-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone number"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/ed_phonenumber"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone number"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="call"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:id="@+id/btn_call"
+        />
+
+
+<!--    SMS typ karine moklva mate-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter contact"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/ed_contact_forsendmessage"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="typ..."
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/ed_sms_typ"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send sms"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_send_sms"
+        />
+</LinearLayout>
