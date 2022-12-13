@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/login_background"
+    tools:context=".Member_Register_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg"
+        android:alpha="0.7"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Register"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Enter firstname"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/all_bg"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+
+            android:id="@+id/ed_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Enter lastname"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/all_bg"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Enter email"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/all_bg"
+            android:inputType="textWebEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/ed_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Enter mobile number"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/all_bg"
+            android:inputType="text|number"
+            />
+
+        <EditText
+            android:id="@+id/ed_familymember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/all_bg"
+            android:drawableLeft="@drawable/ic_baseline_group_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter family member"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/ed_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/all_bg"
+            android:drawableLeft="@drawable/ic_baseline_business_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter occupation"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+
+        <EditText
+            android:id="@+id/ed_housenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/all_bg"
+            android:drawableLeft="@drawable/ic_baseline_house_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter house number"
+            android:inputType="number"
+            android:padding="15dp" />
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_bg"
+            android:hint="Enter password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:passwordToggleEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_bg"
+                android:textSize="18sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/ed_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="15dp"-->
+<!--            android:hint="Enter password"-->
+<!--            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_lock_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:background="@drawable/all_bg"-->
+<!--            android:inputType="textWebPassword"-->
+<!--            />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="23dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="7dp"
+            android:background="@drawable/signup_bg"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="60dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

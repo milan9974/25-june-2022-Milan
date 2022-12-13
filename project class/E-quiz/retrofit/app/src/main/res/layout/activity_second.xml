@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login_background"
+    tools:context=".Second_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/chirmanphoto" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_chairman_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chairman Login"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:background="@drawable/second_activity_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="270dp"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="370dp"
+        android:src="@mipmap/memberphoto" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_member_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member register"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:background="@drawable/second_activity_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="620dp"
+        />
+
+</FrameLayout>
