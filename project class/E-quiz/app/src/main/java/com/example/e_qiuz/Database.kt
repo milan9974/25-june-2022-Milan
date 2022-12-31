@@ -28,20 +28,6 @@ class Database(context: Context):SQLiteOpenHelper(context,"mydb",null,VERSON_NO)
         onCreate(db)
     }
 
-//    fun checkemail(email: String): Boolean {
-//        val db: SQLiteDatabase = this.readableDatabase
-//        val Query =
-//            "Select * from " + TABLE_NAME.toString() + " where " + EMAIL.toString() + " = " + "'" + email + "'"
-//        val cursor: Cursor = db.rawQuery(Query, null)
-//        return if (cursor.getCount() <= 0) {
-//            cursor.close()
-//            false
-//        } else {
-//            cursor.close()
-//            true
-//        }
-//    }
-
     fun insert(modelClass: MyModel) : Long {
         val db = this.writableDatabase
         val contentValues = ContentValues()
@@ -55,5 +41,17 @@ class Database(context: Context):SQLiteOpenHelper(context,"mydb",null,VERSON_NO)
         return insertdata
     }
 
+    fun update(myModel: MyModel): Int {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+
+        contentValues.put(NAME,myModel.name)
+        contentValues.put(EMAIL,myModel.email)
+
+        var id1=db.update(TABLE_NAME,contentValues, ID+" = "+myModel.id,null)
+        db.close()
+        return id1
+
+    }
 
 }

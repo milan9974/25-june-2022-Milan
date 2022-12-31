@@ -1,4 +1,4 @@
-package com.gtappdevelopers.kotlingfgproject
+package com.example.e_qiuz
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -43,6 +43,8 @@ internal class MyAdapter(
     // in below function we are getting individual item of grid view.
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var convertView = convertView
+
+
         // on blow line we are checking if layout inflater
         // is null, if it is null we are initializing it.
         if (layoutInflater == null) {

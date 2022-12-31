@@ -3,20 +3,18 @@ package com.example.e_qiuz
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View.OnCreateContextMenuListener
 import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.GridView
-import android.widget.ImageView
-import android.widget.PopupMenu
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.gtappdevelopers.kotlingfgproject.MyAdapter
 
 class Welcome_Activity : AppCompatActivity() {
 
@@ -35,24 +33,27 @@ class Welcome_Activity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
 
+        // action bar ni andar title no color change karva mate
+        val text: Spannable = SpannableString(supportActionBar!!.title)
+        text.setSpan(ForegroundColorSpan(Color.BLACK), 0, text.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        supportActionBar!!.title = text
+
+        // akha actoin bar nu background change karva mate
+        val colorDrawable = ColorDrawable(Color.parseColor("#FFFFFF"))
+        supportActionBar!!.setBackgroundDrawable(colorDrawable)
+
         myshared = this.getSharedPreferences("mypref_file", Context.MODE_PRIVATE)
         editor = myshared.edit()
 
         gv=findViewById(R.id.gridview)
         list=ArrayList<MyModel>()
 
-        list=list+MyModel(R.mipmap.instagram,"INSTAGRAM")
-        list=list+MyModel(R.mipmap.google,"GOOGLE")
-        list=list+MyModel(R.mipmap.facebooknew,"FACEBOOK")
-        list=list+MyModel(R.mipmap.instagram,"INSTAGRAM")
-        list=list+MyModel(R.mipmap.google,"GOOGLE")
-        list=list+MyModel(R.mipmap.facebooknew,"FACEBOOK")
-        list=list+MyModel(R.mipmap.instagram,"INSTAGRAM")
-        list=list+MyModel(R.mipmap.google,"GOOGLE")
-        list=list+MyModel(R.mipmap.facebooknew,"FACEBOOK")
+        list=list+MyModel(R.mipmap.gk,"General Knowledge")
+        list=list+MyModel(R.drawable.readque,"Read Q&A")
+//        list=list+MyModel(R.mipmap.facebooknew,"FACEBOOK")
 
 
-        var adpter=MyAdapter(list,this@Welcome_Activity)
+        val adpter=MyAdapter(list,this@Welcome_Activity)
         gv.adapter=adpter
 
         gv.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
@@ -60,18 +61,17 @@ class Welcome_Activity : AppCompatActivity() {
 
             if (position==0)
             {
-                var i = Intent(this@Welcome_Activity,Dashboard_Activity::class.java)
-
+                val i = Intent(this@Welcome_Activity,Question_Activity::class.java)
                 startActivity(i)
             }
             else if (position==1)
             {
-                var i = Intent(this@Welcome_Activity,Dashboard_Activity::class.java)
+                val i = Intent(this@Welcome_Activity,Dashboard_Activity::class.java)
                 startActivity(i)
             }
             else if (position==2)
             {
-                var i = Intent(this@Welcome_Activity,Dashboard_Activity::class.java)
+                val i = Intent(this@Welcome_Activity,Dashboard_Activity::class.java)
                 startActivity(i)
             }
         })
@@ -98,9 +98,13 @@ class Welcome_Activity : AppCompatActivity() {
                 editor.apply()
                 editor.commit()
 
-                var intent = Intent(this,Login_Activity :: class.java)
+                val intent = Intent(this,Login_Activity :: class.java)
                 finish()
                 startActivity(intent)
+            }
+
+            R.id.op_profile -> {
+                startActivity(Intent(this,Profile_Activity::class.java))
             }
         }
 

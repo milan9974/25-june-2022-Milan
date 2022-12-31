@@ -27,6 +27,8 @@ class Login_Activity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         supportActionBar!!.hide()
 
+
+
         ed_email_login=findViewById(R.id.ed_email_login)
         ed_pass_login=findViewById(R.id.ed_password_login)
         var btn_login = findViewById<Button>(R.id.btn_login)
