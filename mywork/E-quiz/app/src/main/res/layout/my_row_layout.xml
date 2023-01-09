@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="20dp"
+    android:backgroundTint="#FFFFFF"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    android:id="@+id/click_on_card"
+    app:cardMaxElevation="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/bgforgk">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/instagram"
+        android:layout_gravity="center"
+        android:id="@+id/imageview"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play qiuz"
+        android:textSize="22sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/textview"
+        />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
