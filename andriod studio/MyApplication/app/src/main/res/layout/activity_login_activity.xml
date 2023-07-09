@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login_Activity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter email"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:id="@+id/ed_email_login"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/ed_password_login"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/btn_login"
+        />
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user! Click here"
+        android:gravity="center"
+        android:textColor="#039BE5"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

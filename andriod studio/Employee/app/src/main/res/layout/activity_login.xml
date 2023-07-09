@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/loginbg2"
+    tools:context=".Login_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/loginbg2">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:src="@mipmap/welcome2" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="40dp"
+
+       android:layout_marginRight="40dp"
+       android:layout_marginBottom="20dp"
+       android:background="@drawable/bg"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:elevation="40dp"
+
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="LOG IN"
+               android:textSize="25sp"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:textColor="#000"
+               android:layout_marginTop="20dp"
+               />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+               android:hint="Enter email"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="15dp"
+               app:boxCornerRadiusTopStart="10dp"
+               app:boxCornerRadiusTopEnd="10dp"
+               app:boxCornerRadiusBottomEnd="10dp"
+               app:boxCornerRadiusBottomStart="10dp"
+               app:startIconDrawable="@drawable/ic_baseline_email_24"
+               >
+
+               <EditText
+                   android:id="@+id/ed_email_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="18sp"
+                   android:inputType="textEmailAddress"
+                   />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+               android:hint="Enter password"
+               app:counterEnabled="true"
+               app:counterMaxLength="16"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="15dp"
+               app:boxCornerRadiusTopStart="10dp"
+               app:boxCornerRadiusTopEnd="10dp"
+               app:boxCornerRadiusBottomEnd="10dp"
+               app:boxCornerRadiusBottomStart="10dp"
+               app:startIconDrawable="@drawable/ic_baseline_lock_24"
+               app:passwordToggleEnabled="true"
+               >
+
+               <EditText
+                   android:id="@+id/ed_password_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textWebPassword"
+                   android:maxLength="16"
+                   android:textSize="18sp" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/btn_login_login"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Log In"
+               android:background="@drawable/btnbg"
+               android:textSize="17sp"
+               android:enabled="false"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:padding="10dp"
+               />
+
+           <TextView
+               android:id="@+id/tv_register"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="New user | Register"
+               android:gravity="center"
+               android:layout_marginTop="15dp"
+               android:textColor="#00ACFF"
+               android:layout_marginBottom="15dp"
+               />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or Login with"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/google_link"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/google"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/facebook_link"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/facebooknew"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintEnd_toStartOf="@+id/google_link"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/insta_link"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/instagram"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/google_link"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

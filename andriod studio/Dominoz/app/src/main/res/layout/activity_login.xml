@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pizzalogin"
+    tools:context=".login_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="230dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:alpha=".7"
+            android:background="#E8E2AD"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginTop="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter email or mobile no"
+                    android:inputType="textWebEmailAddress"
+                    android:textSize="17sp"
+                    android:drawablePadding="2dp"
+                    android:id="@+id/tvemailormoblile"
+                    android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="120dp"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter password"
+                    android:inputType="textWebPassword"
+                    android:textSize="17sp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/tvpassword"
+                    android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                    />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-90dp"
+                android:background="@drawable/loginbackground"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                android:id="@+id/btnlogin"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="-40dp"
+                android:gravity="right"
+                android:text="Forget password?"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

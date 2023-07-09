@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".welcome_activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pizzalogin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME!"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:textColor="#D0000000"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:elevation="10dp"
+            android:textColor="#000"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:padding="8dp"
+            android:background="@drawable/loginbackground"
+
+            android:id="@+id/btnloginpage"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:padding="8dp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/loginbackground"
+            android:id="@+id/btnsignuppage"
+            />
+    </LinearLayout>
+
+</FrameLayout>

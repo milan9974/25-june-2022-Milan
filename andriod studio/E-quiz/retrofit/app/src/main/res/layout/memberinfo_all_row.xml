@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="10dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/forcard"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firstname :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lastname :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_familymember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family Member :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occupation :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_housenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="House No :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

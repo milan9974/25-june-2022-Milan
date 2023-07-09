@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FBC7DE"
+    tools:context=".Member_Register">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:elevation="5dp"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:background="@drawable/tabbg"
+       >
+
+       <com.google.android.material.tabs.TabLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tab_layout"
+           android:background="@drawable/tabbg"
+           />
+
+       <androidx.viewpager.widget.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/view_pager"
+           android:layout_marginBottom="10dp"
+           />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:src="@mipmap/google"
+            app:civ_border_width=".5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:src="@mipmap/facebooknew"
+            app:civ_border_width=".5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:src="@mipmap/instagram"
+            app:civ_border_width=".5dp" />
+    </LinearLayout>
+
+</LinearLayout>

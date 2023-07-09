@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">kotlincore</string>
+
+    <string-array name="language">
+        <item>c</item>
+        <item>c++</item>
+        <item>JAVA</item>
+        <item>KOTLIN</item>
+    </string-array>
+
+</resources>

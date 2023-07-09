@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/ed_name_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already user | Click here"
+        android:textColor="#34A0FF"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
